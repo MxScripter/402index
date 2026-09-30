@@ -1,0 +1,11 @@
+name: "doc-extract"
+url: "https://extract.theifstatement.dev/v1/doc-extract"
+protocol: "x402"
+http_method: "POST"
+probe_body: "{\"url\":\"https://raw.githubusercontent.com/invoice-x/invoice2data/master/tests/compare/AmazonWebServices.pdf\",\"schema\":{\"type\":\"object\",\"properties\":{\"invoice_number\":{\"type\":\"string\"},\"date\":{\"type\":\"string\"}},\"required\":[\"invoice_number\",\"date\"]}}"
+description: "x402-paid PDF URL → schema JSON. POST /v1/doc-extract. $0.05 USDC on Base Sepolia (eip155:84532). No API key. Unpaid POST returns 402 + payment-required."
+category: "tools"
+provider: "theifstatement"
+price_usd: 0.05
+payment_asset: "USDC"
+payment_network: "Base Sepolia"
